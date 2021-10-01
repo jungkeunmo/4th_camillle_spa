@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ececec;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 30px;
+}
+
+.header > article {
+  padding: 3px 5px;
+  margin: 0px 15px;
+  cursor: pointer;
+  font-family: bold;
+
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.header > article:hover {
+  border-bottom: 4px solid yellow;
+}
