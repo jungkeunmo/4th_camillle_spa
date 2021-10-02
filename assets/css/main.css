@@ -9,6 +9,8 @@
   width: 100%;
   height: 100%;
   background-color: #999;
+  background-image: url("https://i.pinimg.com/474x/6d/e7/1b/6de71bf9d344113599b434c6ff4cb0f5.jpg");
+  background-size: cover;
 }
 
 .mainImageBox .mainImageBox__txt {
@@ -24,15 +26,26 @@
   justify-content: center;
 }
 
+.mainImageBox .mainImageBox__txt p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1.5px 1.5px 5px #000;
+}
+
 .descriptBox {
   margin: 80px 0px;
   width: 100%;
-  height: 50px;
+  height: 100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.descriptBox p {
+  margin: 5px 0px;
+  color: #999;
 }
 
 .screenBox {
@@ -52,6 +65,28 @@
   border-radius: 10px;
 }
 
+.screenBox div:nth-child(1) {
+  background-image: url("https://i.pinimg.com/474x/9e/36/e8/9e36e89d93cfebd4362c56574a9389f3.jpg");
+  background-size: cover;
+}
+
+.screenBox div:nth-child(2) {
+  background-image: url("https://i.pinimg.com/474x/46/c7/12/46c712f4523f449c82d86ab28daf7212.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.screenBox div:nth-child(3) {
+  background-image: url("https://i.pinimg.com/474x/77/95/bc/7795bc6eb9695c2fd46eafbd9978076c.jpg");
+  background-size: cover;
+}
+
+.screenBox div:nth-child(4) {
+  background-image: url("https://i.pinimg.com/474x/ae/cb/c1/aecbc1ce2cb9fdba3694353fe388d220.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
 .videoBox {
   width: 100%;
   height: 50px 0px;
@@ -61,6 +96,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.videoBox iframe {
+  border-radius: 8px;
 }
 
 .videoBox > div {
@@ -88,4 +127,39 @@
   width: 600px;
   height: 200px;
   background-color: #ececec;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+
+  color: #999;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.si1 {
+  background-image: url("https://i.pinimg.com/474x/73/8c/56/738c56c947945c9a7f3dfe6d030dbc72.jpg");
+  background-size: cover;
+}
+
+.si2 {
+  background-image: url("https://i.pinimg.com/474x/47/11/8a/47118ae68caf470a4a874042059c5f7f.jpg");
+  background-size: cover;
+}
+
+.si3 {
+  background-image: url("https://i.pinimg.com/474x/09/63/7a/09637a70da325146acc34aac65b95c79.jpg");
+  background-size: cover;
+}
+
+.si4 {
+  background-image: url("https://i.pinimg.com/474x/ff/21/12/ff2112fe98aad75769096f0a2aa4dbb5.jpg");
+  background-size: cover;
+}
+
+.si5 {
+  background-image: url("https://i.pinimg.com/474x/f8/72/fb/f872fbb8b4975d88bcac09a9b3fbf471.jpg");
+  background-size: cover;
 }
