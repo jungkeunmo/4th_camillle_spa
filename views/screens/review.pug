@@ -3,9 +3,11 @@ extends ../layouts/base.pug
 block content 
     section.reviewWarpper 
         div.infoBox
-            div N개
+            div #{result1.count} 개
         div.infoBox
-            div N.N점   
-        div.reviewContent
-            div 평점
-            div 내용           
+            div #{result1.avg} 점
+            
+        each review in result2             
+            div.reviewContent
+                div #{review.score}점
+                div #{review.content}
