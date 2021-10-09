@@ -63,4 +63,32 @@ router.get("/review", async (req, res, next) => {
 
 });
 
+router.post("/reviewCreate", (req, res) => {
+    console.log(req.body.score);
+    console.log(req.body.content);
+
+    const insertQuery = `
+        INSERT INTO reviews (
+            score,
+            content
+        ) VALUES (
+            ${req.body.score},
+            "${req.body.content}"
+        )
+    `;
+
+    try {
+        db.query(insertQuery, (error, result) => {
+            if(error) {
+                console.log(error);
+            }
+
+            res.redirect("/review");
+        });
+    } catch (error) {
+        console.error(error);
+        res.redirect("/review");
+    }
+});
+
 module.exports = router;

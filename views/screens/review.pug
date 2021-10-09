@@ -6,6 +6,17 @@ block content
             div #{result1.count} 개
         div.infoBox
             div #{result1.avg} 점
+
+        form.createForm(action="/reviewCreate", method="post")   
+            select(name="score")
+                option(value="1") 1점   
+                option(value="2") 2점   
+                option(value="3") 3점   
+                option(value="4") 4점   
+                option(value="5" selected) 5점   
+
+            input(type="text" name="content" required)
+            input(type="submit" value="작성")    
             
         each review in result2             
             div.reviewContent
